@@ -5,7 +5,6 @@
 _start:		LDR R1, =ZERO     	//store address of ZERO
 					LDR R0, [R1, #4]		//R0 stores the outer loop size of array 
 					LDR R2, [R1, #4]  	//R2 stores the size of the current array for finding MIN
-					ADD R9, R1, #8			//R9 - address of first element
 					ADD R3, R1, #8    	//R3 - pointer to loop through unsorted array
 					LDR R4, [R3]				//R4 - holds value of first element, used to hold min in LOOP_MIN
 					ADD R6, R1, #8			//R6 - address of first element
